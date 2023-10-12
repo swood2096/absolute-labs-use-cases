@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute Labs Use Cases</title>
+</head>
+<body>
+    <h1>Enter Company Details</h1>
+    <form action="/" method="post">
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name">
+        <!-- Add other fields as needed -->
+        <input type="submit" value="Generate Use Cases">
+    </form>
+
+    {% if use_cases %}
+    <h2>Use Cases:</h2>
+    <p>{{ use_cases }}</p>
+    {% endif %}
+</body>
+</html>
